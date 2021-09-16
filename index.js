@@ -8,11 +8,18 @@ const generateMD = (questions) =>
 ## Description
 ${questions.description}
 
+## Table of Contents
+
+* [Technology](#technology)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contribution](#contribution)
+* [Tests](#tests)
+* [Contact](#contact)
+
 ## Technology
 ${questions.technology}
-
-## Table of Contents
-${questions.contents}
 
 ## Installation
 ${questions.installation}
@@ -23,11 +30,14 @@ ${questions.usage}
 ## License
 ${questions.license}
 
-## Contribution
+## Contributing
 ${questions.contribution}
 
 ## Tests
-${questions.tests}`;
+${questions.tests}
+
+## Contact
+Please contact me at ${questions.contact} with any questions or concerns.`;
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -49,18 +59,13 @@ inquirer
     },
     {
       type: "input",
-      name: "contents",
-      message: "Provide a list of table of contents.",
-    },
-    {
-      type: "input",
       name: "installation",
       message: "How do we install your dependencies?",
     },
     {
       type: "input",
       name: "usage",
-      message: "What is the usage for this code?",
+      message: "What is the usage for this project?",
     },
     {
       type: "checkbox",
@@ -70,7 +75,7 @@ inquirer
     },
     {
       type: "input",
-      name: "contribution",
+      name: "contributing",
       message: "How can other people contribute?",
     },
     {
@@ -78,13 +83,19 @@ inquirer
       name: "tests",
       message: "What tests did we preform in this project?",
     },
+    {
+      type: "input",
+      name: "contact",
+      message:
+        "What is a good email address that you can be contacted at regarding this project?",
+    },
   ])
   .then((questions) => {
     const mdPageContent = generateMD(questions);
 
     fs.writeFile("readme.md", mdPageContent, (err) =>
-      err ? console.log(err) : console.log("Successfully created readme.md!")
+      err
+        ? console.log(err)
+        : console.log("Success! Your README.md file has been generated!")
     );
   });
-
-
