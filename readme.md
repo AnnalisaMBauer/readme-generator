@@ -1,4 +1,4 @@
-# README Generator  ![CC0](https://img.shields.io/badge/badge-CC0-blue);
+# README Generator  ![CC0](https://img.shields.io/badge/badge-CC0-blue)
 
 ## Description
 It is important to have a high-quality README for all deployed projects on GitHub. This is what this app is for. You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
@@ -11,6 +11,7 @@ It is important to have a high-quality README for all deployed projects on GitHu
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
+* [Images](#images)
 * [Contact](#contact)
 
 ## Technology
@@ -31,6 +32,12 @@ To contribute to the project please fork this repo and clone this project to you
 
 ## Tests
 No tests were ran at this time.
+
+## Images
+
+
+https://user-images.githubusercontent.com/87721575/133864084-0ce2911c-6296-44ee-81f5-532f99cc1498.mp4
+
 
 ## Contact
 Please contact me at annalisa.bauer1@gmail.com with any questions or concerns.
