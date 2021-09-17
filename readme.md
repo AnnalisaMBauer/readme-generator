@@ -15,7 +15,9 @@ It is important to have a high-quality README for all deployed projects on GitHu
 * [Contact](#contact)
 
 ## Technology
-JSON, Node, JavaScript, 
+- JSON 
+- Node 
+- JavaScript 
 
 ## Installation
 In order to generate a README you will need to run commands `npm init -y` and `npm install inquirer` in the command-line terminal. The application itself can be executed with command `node index.js` in the command-line terminal.
