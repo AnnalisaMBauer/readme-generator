@@ -1,43 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
+const generateMD = require("./utils/generateMarkdown");
 const fs = require("fs");
-
-const generateMD = (questions) =>
-  `# ${questions.title}
-
-## Description
-${questions.description}
-
-## Table of Contents
-
-* [Technology](#technology)
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contribution](#contribution)
-* [Tests](#tests)
-* [Contact](#contact)
-
-## Technology
-${questions.technology}
-
-## Installation
-${questions.installation}
-
-## Usage
-${questions.usage}
-
-## License
-${questions.license}
-
-## Contributing
-${questions.contribution}
-
-## Tests
-${questions.tests}
-
-## Contact
-Please contact me at ${questions.contact} with any questions or concerns.`;
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -71,7 +35,7 @@ inquirer
       type: "checkbox",
       name: "license",
       message: "What is the license for this project?",
-      choices: ["MIT", "Artistic", "Apache", "CC0", "WTFPL"],
+      choices: ["MIT", "Artistic", "Apache", "CC0", "WTFPL", "none"],
     },
     {
       type: "input",
